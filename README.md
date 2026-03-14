@@ -80,8 +80,8 @@ Architecture layers:
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-repo/product-api.git
-cd product-api
+git clone https://github.com/your-repo/simple-crud-dotnet.git
+cd simple-crud-dotnet
 ```
 
 Restore dependencies:
@@ -133,13 +133,7 @@ dotnet run
 Default server:
 
 ```
-http://localhost:5000
-```
-
-or
-
-```
-https://localhost:5001
+https://localhost:5093
 ```
 
 ---
@@ -149,7 +143,7 @@ https://localhost:5001
 Open in browser:
 
 ```
-http://localhost:5000/swagger
+http://localhost:5093/swagger
 ```
 
 You can test the API directly from Swagger UI.
@@ -330,14 +324,6 @@ dotnet ef migrations remove
 
 ---
 
-
-# Test with swagger
-
-```bash
-visit http://localhost:5093/swagger/index.html
-```
-
----
 
 # Author
 
