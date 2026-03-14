@@ -1,4 +1,4 @@
-# Product API (.NET Clean Architecture)
+# Simple API (.NET Clean Architecture)
 
 Simple CRUD REST API built with **.NET**, **Entity Framework Core**, **SQLite**, **FluentValidation**, and **Clean Architecture** principles.
 
