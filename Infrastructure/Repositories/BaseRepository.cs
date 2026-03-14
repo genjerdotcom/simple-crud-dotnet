@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using Core.Interfaces;
-using Microsoft.Extensions.Logging;
 
 namespace Infrastructure.Repositories;
 

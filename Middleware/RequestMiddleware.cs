@@ -18,13 +18,10 @@ public class RequestMiddleware
     public async Task InvokeAsync(HttpContext context)
     {
         var startTime = Stopwatch.GetTimestamp();
-        var requestId = context.Request.Headers["X-Request-ID"].FirstOrDefault() ?? Guid.NewGuid().ToString();
-
         string requestBody = await ReadRequestBody(context);
 
         using (_logger.BeginScope(new Dictionary<string, object> 
         { 
-            ["RequestId"] = requestId,
             ["Method"] = context.Request.Method,
             ["Path"] = context.Request.Path,
             ["RequestBody"] = requestBody
