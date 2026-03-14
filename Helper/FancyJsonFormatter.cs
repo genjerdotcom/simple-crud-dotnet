@@ -14,12 +14,12 @@ public class FancyJsonFormatter : ConsoleFormatter
         var shortLevel = level switch
         {
             LogLevel.Trace       => "trace",
-            LogLevel.Debug       => "dbug ",
+            LogLevel.Debug       => "debug ",
             LogLevel.Information => "info ",
             LogLevel.Warning     => "warn ",
             LogLevel.Error       => "error",
-            LogLevel.Critical    => "crit ",
-            _                    => "unkn "
+            LogLevel.Critical    => "critical ",
+            _                    => "unknown "
         };
 
         var color = level switch
